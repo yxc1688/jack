@@ -1,0 +1,21 @@
+.page-main h2{
+	font-size: 24px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+.page-main time{
+	font-size: 15px;
+	color: #666;
+}
+.page-main p,.page-main p a{
+	margin: 0 0 10px;
+	text-indent: 32px;
+    font-size: 16px;
+	color: #666;
+}
+.page-main img {
+	display: block;
+    max-width: 100%;
+    margin:0 auto;
+}

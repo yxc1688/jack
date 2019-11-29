@@ -1,0 +1,83 @@
+
+h1,h2,h3,h4,h5,h6{
+	font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+h2{
+	font-size: 30px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.fs-color{
+	color: #d60107;
+}
+.fs-f{
+	color: #fff;
+}
+.fs-c{
+	color: #ccc;
+}
+.fb{
+    font-weight: bold;
+}
+
+.bg-color{
+	background-color: #d60107;
+}
+
+.bg-f{
+	background-color:#fff;
+}
+
+.pd15{
+	padding:15px;
+}
+
+.fs14{
+	font-size:14px;
+}
+.fs16{
+	font-size:16px;
+}
+.fs22{
+	font-size:22px;
+}
+.fs36{
+	font-size:36px;
+}
+
+
+.ease-in-out{
+    -webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    -ms-transition: all .2s ease-in-out 0s;
+    -o-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+}
+
+.ease-in-out3{
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+.ease-in-out5{
+    -webkit-transition: all .5s ease-in-out 0s;
+    -moz-transition: all .5s ease-in-out 0s;
+    -ms-transition: all .5s ease-in-out 0s;
+    -o-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+}
+.ease-in-out6{
+	-webkit-transition: all .6s ease-in-out 0s;
+    -moz-transition: all .6s ease-in-out 0s;
+    -ms-transition: all .6s ease-in-out 0s;
+    -o-transition: all .6s ease-in-out 0s;
+    transition: all .6s ease-in-out 0s;
+}
+
+
+

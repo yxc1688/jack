@@ -1,0 +1,278 @@
+/* ========== */
+/* = main 网页主体内容 = */
+/* ========== */
+.main{
+	max-width: 1200px;
+    margin: 20px auto;
+}
+/*		标题		*/
+.main .title{
+	font-size: 28px;
+    color: #0084ff;
+    padding: 20px 0;
+    margin: 30px 0;
+}
+
+p{
+	margin: 0 0 10px;
+}
+/*		分析		*/
+.main .analyse{
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.main .analyse img{
+	width: 80%;
+	margin: 10px 0;
+}
+.main .analyse span{
+	font-size: 19px;
+    line-height: 30px;
+}
+
+/*		比较		*/
+.main .vs{
+	margin: 60px auto;
+}
+.main .vs li{
+	width: 50%;
+    height: 127px;
+    border-bottom: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #e9e9e9;
+    float: left;
+    color: #fff;
+    font-size: 23px;
+}
+.main .vs li:nth-of-type(odd) {
+    color: #8f8f8f;
+}
+.main .vs li:nth-of-type(even){
+	background-color: #2FA5FF;
+}
+.main .vs li:nth-of-type(-n+2) {
+    font-size: 35px;
+}
+.main .vs li div{
+	width: 100%;
+    height: 130px;
+    float: right;
+    position: relative;
+    text-align: center;
+    padding-top: 35px;
+}
+.main .vs li div img{
+	width: 147px;
+	height: 130px;
+	top: -8px;
+	right: -60px;
+}
+.main .vs li div p{
+	position: absolute;
+	width: 220px;
+    height: 48px;
+    line-height: 48px;
+    background: -webkit-linear-gradient(left,#2ed2f5,#2ca2ee);
+    background: -moz-linear-gradient(right,#2ed2f5,#2ca2ee);
+    background: -o-linear-gradient(right,#2ed2f5,#2ca2ee);
+    background: linear-gradient(to right,#2ed2f5,#2ca2ee);
+    top: 38px;
+    right: -105px;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+    box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+}
+
+/*		能做什么		*/
+.main .doWhat{
+	max-width: 1200px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.main .doWhat h2{
+	font-size: 40px;
+    color: #333;
+    line-height: 52px;
+    margin-bottom: 90px;
+}
+.main .doWhat ul{
+	padding: 0 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .doWhat li{
+    text-align: center;
+    color: #333;
+    width: 25%;
+    margin-bottom: 60px;
+    padding: 20px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.main .doWhat li:hover{
+	-webkit-box-shadow: 0 0 20px rgba(214, 214, 214, 0.51);
+    -moz-box-shadow: 0 0 20px rgba(214, 214, 214, 0.51);
+    box-shadow: 0 0 20px rgba(214, 214, 214, 0.51);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.main .doWhat li>img{
+	width: 30%;
+	height: 79px;
+}
+.main .doWhat h6{
+	font-size: 25px;
+	margin: 15px 0 25px;
+}
+.main .doWhat p{
+	font-size: 16px;
+}
+
+/*		蓝色标题		*/
+.main .blue-title{
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+	background-color: #0084ff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 35px;
+    margin-top: 50px;
+}
+.main .blue-title i{
+	font-size: 25px;
+}
+
+/*		简介		*/
+.introduce{
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 40px;
+}
+.introduce span{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #0084ff;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+}
+.introduce .introduce-text{
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    padding: 60px 100px;
+    line-height: 30px;
+    margin-top: -40px;
+    font-size: 16px;
+}
+
+/* ========== */
+/* = 响应式部分 = */
+/* ========== */
+@media (max-width:1200px) {
+	.main .vs,.main .analyse,.main .doWhat,.main .introduce{
+		width: 94%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main .doWhat li>img{
+		height: auto;
+	}
+}
+
+@media (max-width:1100px){
+	.main .vs li:nth-of-type(-n+2) div{
+		font-size: 30px;
+	}
+	.main .vs li div{
+		font-size: 20px;
+	}
+	.main .vs li div p{
+		width: 150px;
+    	right: -73px;
+	}
+	.main .doWhat li br{
+		display: none;
+	}
+}
+
+@media (max-width: 1000px){
+	.main .doWhat ul{
+		padding: 0;
+	}
+	.introduce .introduce-text{
+		padding: 60px;
+	}
+}
+
+@media (max-width:992px){
+	.main .vs li:nth-of-type(-n+2) div{
+		font-size: 25px;
+	}
+	.main .vs li div{
+		font-size: 18px;
+	}
+	.main .vs li div p{
+		width: 110px;
+		right: -52px;
+	}
+}
+
+@media (max-width:767px){
+	.main .title{
+		padding: 0;
+		font-size: 23px;
+	}
+	.main .analyse{
+		margin-bottom: 0;
+	}
+	.main .analyse img{
+		width: 100%;
+	}
+	.main .doWhat h2{
+		font-size: 25px;
+		margin-bottom: 20px
+	}
+	.main .doWhat li{
+		width: 50%;
+		margin-bottom: 0;
+	}
+	.main .doWhat li h6{
+		font-size: 20px;
+	}
+	.main .doWhat li p{
+		font-size: 14px;
+	}
+	.main .blue-title{
+		width: 94%;
+	    margin: auto;
+	    margin-top: 50px;
+	}
+	.introduce .introduce-text{
+		padding: 60px 20px;
+	}
+}
+
+
+
+
+

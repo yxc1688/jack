@@ -1,0 +1,243 @@
+.list-main p{
+	margin: 0 0 10px;
+}
+/* ========== */
+/* = 主体部分 = */
+/* ========== */
+.list-main{
+	max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========== */
+/* = 侧边栏 = */
+/* ========== */
+.list-main .sidebar{
+	width: 22%;
+	margin-top: 35px;
+}
+.list-main .sidebar>p,.list-main .sidebar .list_us span{
+	font-size: 20px;
+    background-color: #d60107;
+    color: #fff;
+    padding: 15px 0;
+}
+.list-main .sidebar .list_news{
+	border: solid 1px #ccc;
+    border-top: 0;
+    padding: 0 10px 30px;
+    margin-bottom: 30px;
+}
+.list-main .sidebar .list_news li{
+    line-height: 45px;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: dashed #ccc 1px;
+	font-size: 15px;
+}
+.list-main .sidebar .list_news li a{
+	color: #333;
+}
+.list-main .sidebar .list_us{
+	margin-top: 30px;
+}
+.list-main .sidebar .list_us span{
+    width: 100%;
+}
+.list-main .sidebar .list_us p{
+	border: solid 1px #ccc;
+    border-top: 0;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 34px;
+}
+
+/* ========== */
+/* = 内容 = */
+/* ========== */
+.list-main>section{
+	width: 76%;
+    margin-top: 25px;
+}
+.list-main .crumb{
+	margin: 0 15px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    border-bottom: solid 1px #ccc
+}
+.list-main .crumb a{
+	color: #333;
+}
+
+.list-main .news-content li{
+	padding: 10px 0;
+    border-bottom: dashed 1px #ccc;
+}
+.list-main .news-content a{
+	display: flex;
+    justify-content: space-between;
+}
+.list-main .news-content .content-left{
+	width: 15%;
+}
+.list-main .news-content .content-left img{
+	width: 100%;
+	height: 105px;
+}
+.list-main .news-content .content-right{
+	width: 83%;
+}
+.list-main .news-content .content-right span{
+	font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+.list-main .news-content .content-right time{
+    display: inline-block;
+    width: 100%;
+    height: 21.5px;
+    line-height: 21.5px;
+    margin-top: 5px;
+    font-size: 12px;
+	color: #888;
+}
+.list-main .news-content .content-right p{
+	font-size: 15px;
+    color: #666;
+    margin-top: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* ========== */
+/* = page 翻页 = */
+/* ========== */
+.pages{
+	width: 100%;
+	margin: 20px auto;
+}
+.pages a{
+	display: inline-block;
+    margin-bottom: 10px;
+    padding: 7px 13px;
+    border: solid 1px #ccc;
+	color: #d60107;
+}
+
+/* ========== */
+/* = extension 推广 = */
+/* ========== */
+.extension{
+	height: 218px;
+    margin: 20px 0px;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+}
+.extension .img-wrap img{
+	width: 67px;
+    height: 67px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-top: 26px;
+}
+.extension strong{
+	margin-top: 10px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.extension p{
+	width: 78%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+    line-height: 17px;
+    font-weight: 300;
+}
+.extension .btn-see{
+    width: 120px;
+    line-height: 12px;
+    margin: 13px 0 25px;
+	padding: 8px 0;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #3897f0;
+    border-radius: 3px;
+}
+
+
+/* ========== */
+/* = 响应式部分 = */
+/* ========== */
+@media (max-width: 1200px){
+	.list-main{
+		width: 94%;
+	}
+	.list-main .news-content .content-left img{
+		height: 94px;
+	}
+}
+@media (max-width: 1100px){
+	.list-main .news-content .content-left img{
+		height: 85px;
+	}
+}
+@media (max-width: 1000px){
+	.list-main{
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+	}
+	.list-main .sidebar,.list-main>section{
+		width: 94%;
+		margin: auto;
+	}
+	.list-main .news-content .content-left img{
+		height: 96px;
+	}
+}
+
+@media (max-width: 800px){
+	.list-main .news-content .content-left img{
+		height: 78px;
+	}
+}
+
+@media (max-width: 767px){
+	.list-main .crumb{
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.list-main .news-content .content-left{
+		width: 25%;
+	}
+	.list-main .news-content .content-left img{
+		height: 70px;
+	}
+	.list-main .news-content .content-right{
+		width: 71%;
+	}
+	.list-main .news-content .content-right span{
+		font-size: 17px;
+	}
+	.list-main .news-content .content-right p{
+		font-size: 13px;
+		margin-top: 2px;
+	}
+}
+
+
+
+

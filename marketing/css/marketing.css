@@ -1,0 +1,207 @@
+*{
+	-webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+     box-sizing: border-box; 
+}
+.main{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.main .title{
+	font-size: 28px;
+    color: #0084ff;
+    margin: 50px 0;
+}
+/* 推广 */
+.main .extension{
+	display: flex;
+	justify-content: space-between;
+}
+.main .extension>div{
+	width: 50%;
+}
+.main .extension .left{
+	margin-top: 50px;
+}
+.main .extension .left h2{
+	color: #002060;
+}
+.main .extension .left span{
+    font-size: 16px;
+    color: #999;
+    line-height: 30px
+}
+.main .extension .left p{
+	margin-top: 10px;
+    border-left: 4px solid #e3e4e4;
+    padding-left: 10px;
+    line-height: 22px;
+    color: #002060;
+    font-size: 15px;
+}
+
+/* 方式 */
+.main .mode{
+	display: flex;
+    justify-content: space-between;
+    color: #002060;
+}
+.main .mode ul{
+	width: 30%;
+	padding: 0 50px;
+}
+.main .mode ul li{
+	margin: 65px 0;
+}
+.main .mode ul li h4{
+	font-size: 25px;
+	font-weight: 600;
+}
+.main .mode ul li p{
+	font-size: 16px;
+    margin-top: 10px;
+}
+.main .mode .mode-middle{
+	width: 33%;
+}
+.main .mode .mode-middle img{
+	width: 100%;
+}
+
+/* 平台 */
+.main .platform>ul{
+	display: flex;
+    justify-content: space-between;
+}
+.main .platform .platform-top>li{
+	border: solid 2px #888;
+    width: 18%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.main .platform .platform-top>li span{
+	font-size: 24px;
+	color: #111;
+}
+.main .platform .platform-top>li p{
+	margin: 15px 0 10px;
+    font-size: 17px;
+    color: #333;
+}
+.main .platform .platform-bottom{
+	display: flex;
+    justify-content: space-between;
+}
+.main .platform .platform-bottom>li{
+	width: 25%;
+	margin-top: 50px;
+}
+.main .platform .platform-bottom>li span{
+	font-size: 32px;
+	font-weight: 600;
+	color: #2d65a2;
+}
+.main .platform .platform-bottom>li p{
+	font-size: 22px;
+	color: #333;
+	margin-bottom: 10px;
+}
+/* 简介 */
+.introduce{
+	margin-top: 40px;
+}
+.introduce span{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #0084ff;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+}
+.introduce .introduce-text{
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    padding: 60px 100px;
+    line-height: 30px;
+    margin-top: -40px;
+    font-size: 16px;
+}
+
+/* ========== */
+/* = 响应式部分 = */
+/* ========== */
+@media (max-width: 1200px){
+	.main{
+	    width: 94%;
+	}
+	.main .platform .platform-top>li{
+		width: 20%;
+	}
+}
+
+@media (max-width: 1100px){
+	.main .platform .platform-top>li{
+		width: 23%;
+	}
+}
+
+@media (max-width: 992px){
+	.main .extension .left{
+		margin: 0;
+	}
+	.main .mode ul{
+	    width: 50%;
+	    padding: 0 15px;
+	    text-align: center;
+	}
+	.main .mode ul li{
+		margin: 30px 0;
+	}
+	.main .mode ul li h4{
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 767px){
+	.main .extension{
+		flex-wrap: wrap;
+	}
+	.main .extension>div{
+		width: 100%;
+		text-align: center;
+	}
+	.main .extension .left p{
+		text-align: left;
+	    width: 60%;
+	    margin: 20px auto
+	}
+	
+	.main .title{
+		margin: 30px 0;
+		font-size: 23px;
+	}
+	
+	.main .platform>ul{
+		flex-wrap: wrap;
+	}
+	.main .platform .platform-top>li{
+		width: 100%;
+	    padding: 0;
+	    margin: 15px 0;
+	    padding-top: 15px;
+	}
+	.main .platform .platform-top>li span{
+		font-size: 20px;
+	}
+	.main .platform .platform-bottom>li{
+		width: 50%;
+    	margin-top: 20px;
+	}
+	
+	.main .introduce .introduce-text{
+		padding: 60px 20px;
+	}
+}
+
+
